@@ -43,7 +43,7 @@ atom-text-editor::shadow .gutter {
   font-size: 12px;
 
   .list-item {
-    line-height: 26px !important;
+    line-height: 24px;
   }
 
   .selected:before,
@@ -65,6 +65,14 @@ atom-text-editor::shadow .gutter {
     opacity: .6;
     margin-right: 0px !important;
   }
+}
+
+.tree-view-open-files {
+
+  .list-item {
+    line-height: 20px !important;
+  }
+
 }
 
 /* more subtle invisibles */
@@ -97,7 +105,7 @@ atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > 
 atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > div > div.tree-view-open-files {
   max-height: 100% !important;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 20px;
 
   li {
     padding-left: 6px !important;
