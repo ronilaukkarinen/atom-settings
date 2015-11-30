@@ -54,7 +54,7 @@
         borderStyle: "i-beam"
         borderWidth: 3
   "linter-scss-lint":
-    executablePath: "/Users/rolle/.rvm/gems/ruby-2.1.1/bin/scss-lint"
+    executablePath: "/Users/rolle/.rvm/gems/ruby-2.2.1/wrappers/scss-lint"
   "tree-view-open-files": {}
   "opened-files": {}
 ".sass.source":
