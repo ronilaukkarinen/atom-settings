@@ -1,1 +1,73 @@
-/Users/rolle/.atom/styles.less
+/*
+ * Your Stylesheet
+ *
+ * This stylesheet is loaded when Atom starts up and is reloaded automatically
+ * when it is changed.
+ *
+ * If you are unfamiliar with LESS, you can read more about it here:
+ * http://www.lesscss.org
+ */
+
+atom-text-editor .vertical-scrollbar,
+atom-text-editor::shadow .vertical-scrollbar,
+atom-text-editor .horizontal-scrollbar,
+atom-text-editor::shadow .horizontal-scrollbar,
+atom-text-editor .scrollbar-corner,
+atom-text-editor::shadow .scrollbar-corner {
+  opacity: 0;
+  width: 0;
+}
+
+atom-text-editor {
+    font-family: Hack, Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+atom-text-editor .gutter,
+atom-text-editor::shadow .gutter {
+  background: rgba(0,0,0,0.009);
+  color: rgba(255,255,255,0.5);
+}
+
+.tree-view {
+  font-size: 12px;
+  .list-item {
+    line-height: 26px !important;
+  }
+  .selected:before, .selected:before {
+    height: 26px !important;
+  }
+  .icon:before {
+    font-size: 11px;
+    width: 10px;
+    height: 10px;
+    opacity: .6;
+    position: relative;
+    top: 0px;
+  }
+  .header:before {
+    font-size: 10px !important;
+    opacity: .6;
+    margin-right: 0px !important;
+  }
+}
+
+/* more subtle invisibles */
+atom-text-editor {
+  .invisible-character {
+    color: #504949;
+    opacity: 0.5;
+  }
+  .indent-guide {
+    opacity: .5;
+  }
+}
+
+atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
+    background-color: rgba(53, 57, 60, 0)
+}
+
+atom-text-editor.is-focused .selection .region {
+  background-color: RGBA(100, 110, 100, 0.6);
+  color: #fff !important;
+  text-shadow: none;
+}

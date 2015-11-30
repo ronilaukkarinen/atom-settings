@@ -1,1 +1,54 @@
-/Users/rolle/.atom/config.cson
+"*":
+  editor:
+    invisibles: {}
+  core:
+    themes: [
+      "itg-flat-dark"
+      "itg-flat-flatland-Monokai"
+    ]
+  "exception-reporting":
+    userId: "34578274-f306-17fb-5642-e7620e809e6a"
+  "release-notes":
+    viewedVersion: "0.84.0"
+  welcome:
+    showOnStartup: false
+  metrics:
+    userId: "74b1f6b2f4dda833f42a3563c0f8326bee7ae2fe"
+  minimap:
+    scrollAnimation: true
+  wakatime:
+    apikey: "5688e83b-7bc8-4f62-ad42-10088370fa31"
+  tasks: {}
+  "block-cursor":
+    global:
+      blinkOn:
+        backgroundColor:
+          red: 0
+          green: 0
+          blue: 0
+          alpha: 0
+        borderColor:
+          red: 221
+          green: 221
+          blue: 221
+          alpha: 1
+        borderStyle: "i-beam"
+        borderWidth: 3
+    mini:
+      selector: "atom-text-editor[mini]"
+      blinkOn:
+        backgroundColor: "transparent"
+        borderColor: "#dddddd"
+        borderStyle: "i-beam"
+        borderWidth: 3
+    "no-focus":
+      selector: "atom-text-editor:not(.is-focused)"
+    "coffee-script":
+      scopes: [
+        ".source.coffee"
+      ]
+      blinkOn:
+        backgroundColor: "transparent"
+        borderColor: "#dddddd"
+        borderStyle: "i-beam"
+        borderWidth: 3
