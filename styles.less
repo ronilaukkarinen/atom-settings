@@ -7,7 +7,6 @@
  * If you are unfamiliar with LESS, you can read more about it here:
  * http://www.lesscss.org
  */
-
 atom-text-editor .vertical-scrollbar,
 atom-text-editor::shadow .vertical-scrollbar,
 atom-text-editor .horizontal-scrollbar,
@@ -18,24 +17,35 @@ atom-text-editor::shadow .scrollbar-corner {
   width: 0;
 }
 
+atom-text-editor::shadow atom-text-editor-minimap::shadow .minimap-scroll-indicator,
+atom-text-editor atom-text-editor-minimap::shadow .minimap-scroll-indicator,
+atom-text-editor-minimap::shadow .minimap-scroll-indicator {
+  height: 0;
+  opacity: 0;
+}
+
 atom-text-editor {
-    font-family: Hack, Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+  font-family: Hack, Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 
 atom-text-editor .gutter,
 atom-text-editor::shadow .gutter {
-  background: rgba(0,0,0,0.009);
-  color: rgba(255,255,255,0.5);
+  background: rgba(0, 0, 0, 0.009);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .tree-view {
   font-size: 12px;
+
   .list-item {
     line-height: 26px !important;
   }
-  .selected:before, .selected:before {
+
+  .selected:before,
+  .selected:before {
     height: 26px !important;
   }
+
   .icon:before {
     font-size: 11px;
     width: 10px;
@@ -44,6 +54,7 @@ atom-text-editor::shadow .gutter {
     position: relative;
     top: 0px;
   }
+
   .header:before {
     font-size: 10px !important;
     opacity: .6;
@@ -57,13 +68,15 @@ atom-text-editor {
     color: #504949;
     opacity: 0.5;
   }
+
   .indent-guide {
     opacity: .5;
   }
 }
 
-atom-text-editor.is-focused .line-number.cursor-line-no-selection, atom-text-editor.is-focused .line.cursor-line {
-    background-color: rgba(53, 57, 60, 0)
+atom-text-editor.is-focused .line-number.cursor-line-no-selection,
+atom-text-editor.is-focused .line.cursor-line {
+  background-color: rgba(53, 57, 60, 0);
 }
 
 atom-text-editor.is-focused .selection .region {
