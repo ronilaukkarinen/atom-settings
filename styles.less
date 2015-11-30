@@ -73,7 +73,11 @@ atom-text-editor::shadow .gutter {
   font-size: 12px !important;
 
   .list-item {
-    line-height: 23px !important;
+    line-height: 19px !important;
+  }
+
+  .close-open-file::before {
+    font-size: 8px;
   }
 
 }
@@ -113,4 +117,8 @@ atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > 
   li {
     padding-left: 6px !important;
   }
+}
+
+.tree-view-resizer .tree-view-scroller {
+  overflow: hidden;
 }
