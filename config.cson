@@ -53,3 +53,10 @@
         borderColor: "#dddddd"
         borderStyle: "i-beam"
         borderWidth: 3
+  "linter-scss-lint":
+    executablePath: "/Users/rolle/.rvm/gems/ruby-2.1.1/bin/scss-lint"
+  "tree-view-open-files": {}
+  "opened-files": {}
+".sass.source":
+  editor:
+    autoIndentOnPaste: false

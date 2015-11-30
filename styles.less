@@ -39,7 +39,7 @@ atom-text-editor::shadow .gutter {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.tree-view {
+.tree-view, .tree-view-open-files {
   font-size: 12px;
 
   .list-item {
@@ -88,4 +88,18 @@ atom-text-editor.is-focused .selection .region {
   background-color: RGBA(100, 110, 100, 0.6);
   color: #fff !important;
   text-shadow: none;
+}
+
+atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > div > div.tree-view-open-files > ul > li > div {
+  display: none;
+}
+
+atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > div > div.tree-view-open-files {
+  max-height: 100% !important;
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+  li {
+    padding-left: 6px !important;
+  }
 }
