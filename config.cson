@@ -57,6 +57,9 @@
     executablePath: "/Users/rolle/.rvm/gems/ruby-2.2.1/wrappers/scss-lint"
   "tree-view-open-files": {}
   "opened-files": {}
+  "tree-view":
+    hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
 ".sass.source":
   editor:
     autoIndentOnPaste: false
