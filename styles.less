@@ -24,6 +24,11 @@ atom-text-editor-minimap::shadow .minimap-scroll-indicator {
   opacity: 0;
 }
 
+atom-text-editor::shadow atom-text-editor-minimap,
+atom-text-editor atom-text-editor-minimap {
+  background: rgba(255,255,255, 0.02);
+}
+
 atom-text-editor {
   font-family: Hack, Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }

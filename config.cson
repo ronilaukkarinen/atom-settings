@@ -1,6 +1,7 @@
 "*":
   editor:
     invisibles: {}
+    fontSize: 13
   core:
     themes: [
       "itg-flat-dark"
