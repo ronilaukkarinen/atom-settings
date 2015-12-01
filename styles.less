@@ -7,7 +7,7 @@
  * If you are unfamiliar with LESS, you can read more about it here:
  * http://www.lesscss.org
  */
- 
+
 atom-text-editor .vertical-scrollbar,
 atom-text-editor::shadow .vertical-scrollbar,
 atom-text-editor .horizontal-scrollbar,
@@ -120,6 +120,6 @@ atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > 
   }
 }
 
-.tree-view-resizer .tree-view-scroller {
-  overflow: hidden;
+.tree-view-resizer .tree-view-scroller, .tree-view-open-files > .list-tree {
+  overflow: hidden !important;
 }

@@ -60,6 +60,9 @@
   "tree-view":
     hideIgnoredNames: true
     hideVcsIgnoredFiles: true
+  "recent-projects": {}
+  "recent-finder": {}
+  "markdown-preview": {}
 ".sass.source":
   editor:
     autoIndentOnPaste: false
