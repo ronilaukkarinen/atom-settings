@@ -17,6 +17,8 @@
     userId: "74b1f6b2f4dda833f42a3563c0f8326bee7ae2fe"
   minimap:
     scrollAnimation: true
+    plugins:
+      pigments: true
   wakatime:
     apikey: "5688e83b-7bc8-4f62-ad42-10088370fa31"
   tasks: {}
