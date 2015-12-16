@@ -65,6 +65,7 @@
   "recent-projects": {}
   "recent-finder": {}
   "markdown-preview": {}
+  "open-recent": {}
 ".sass.source":
   editor:
     autoIndentOnPaste: false
