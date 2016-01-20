@@ -148,3 +148,12 @@ atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > 
 .list-tree.has-collapsable-children .list-nested-item.collapsed > .list-item::before {
   top: 0px;
 }
+
+.tree-view-resizer .tree-view-scroller .tree-view {
+  .selected:before,
+  &.tree-view-open-files .selected:before,
+  .selected:before,
+  &.tree-view-open-files .selected:before {
+    display: none;
+  }
+}
