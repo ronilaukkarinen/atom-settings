@@ -43,13 +43,10 @@ atom-text-editor::shadow .gutter {
 .tree-view, .tree-view-open-files {
   font-size: 12px;
 
-  .list-item {
-    line-height: 24px;
-  }
-
   .selected:before,
   .selected:before {
-    height: 24px !important;
+    height: 25px !important;
+    margin-top: 3px;
   }
 
   .icon:before {
@@ -58,7 +55,7 @@ atom-text-editor::shadow .gutter {
     height: 16px;
     opacity: .7;
     position: relative;
-    top: 6px;
+    top: 5px;
   }
 
   .header:before {
@@ -79,7 +76,6 @@ atom-text-editor::shadow .gutter {
 
   .close-open-file::before {
     font-size: 10px;
-    top: -4px;
     margin-right: 4px;
   }
 
@@ -128,6 +124,6 @@ atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > 
   }
 }
 
-.name.icon {
-  top: -4px;
+.icon.name {
+  font-size: 12px;
 }
