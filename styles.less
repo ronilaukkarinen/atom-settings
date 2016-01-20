@@ -58,7 +58,7 @@ atom-text-editor::shadow .gutter {
     height: 16px;
     opacity: .7;
     position: relative;
-    top: 5px;
+    top: 6px;
   }
 
   .header:before {
@@ -78,7 +78,9 @@ atom-text-editor::shadow .gutter {
   }
 
   .close-open-file::before {
-    font-size: 8px;
+    font-size: 10px;
+    top: -4px;
+    margin-right: 4px;
   }
 
 }
@@ -124,4 +126,8 @@ atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > 
   ::-webkit-scrollbar {
     display: none;
   }
+}
+
+.name.icon {
+  top: -4px;
 }
