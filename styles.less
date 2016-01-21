@@ -39,18 +39,10 @@ atom-text-editor::shadow .gutter {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.tree-view,
-.tree-view-open-files {
+.tree-view {
   font-size: 12px;
 
-  .selected:before,
-  .selected:before {
-    height: 25px !important;
-    margin-top: 5px;
-  }
-
   .icon:before {
-    font-size: 15px;
     width: 16px;
     height: 16px;
     opacity: .7;
@@ -76,6 +68,8 @@ atom-text-editor::shadow .gutter {
   .close-open-file::before {
     font-size: 10px;
     margin-right: 4px;
+    position: relative;
+    transform: translateY(-20%);
   }
 }
 
@@ -112,7 +106,7 @@ atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > 
   margin-top: 20px;
 
   li {
-    padding-left: 6px !important;
+    padding-left: 0 !important;
   }
 }
 
@@ -134,19 +128,12 @@ atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > 
 
 .name.icon.icon-repo:before {
   font-size: 18px;
-  top: 5px;
+  top: 3px;
 }
 
-.name.icon.icon-file-directory {
-  top: 1px;
-}
-
-.list-tree.has-collapsable-children .list-nested-item > .list-item::before {
-  top: 1px;
-}
-
-.list-tree.has-collapsable-children .list-nested-item.collapsed > .list-item::before {
-  top: 0px;
+.list-group .selected::before,
+.list-tree .selected::before {
+  display: none;
 }
 
 .tree-view-resizer .tree-view-scroller .tree-view {
@@ -155,5 +142,52 @@ atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > 
   .selected:before,
   &.tree-view-open-files .selected:before {
     display: none;
+  }
+}
+
+// Package specific styles for tree-view-open-files package
+
+.tree-view-open-files {
+
+  li.expanded {
+    padding-left: 0 !important;
+  }
+
+  .close-open-file {
+    margin-left: 0 !important;
+  }
+
+  .icon:before {
+    width: 16px;
+    height: 16px;
+    opacity: .7;
+    position: relative;
+    top: 0;
+    transform: translateY(40%);
+  }
+
+  .header:before {
+    font-size: 10px !important;
+    opacity: .6;
+    margin-right: 0px !important;
+  }
+
+  .list-group,
+  .list-tree {
+
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    .list-item {
+      margin: 0;
+      padding-left: 6px !important;
+      padding-right: 0;
+      width: 100%;
+
+      // Better flatland-styled hilight
+      &.selected {
+        background: #f15554;
+      }
+    }
   }
 }
