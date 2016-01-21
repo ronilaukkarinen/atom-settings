@@ -163,16 +163,25 @@ atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > 
       height: 27px;
       width: 27px;
       margin-left: -4px;
+
+      &[data-name="untitled"] {
+        left: 3px;
+        line-height: 27px !important;
+
+        &:before {
+          margin-right: 15px !important;
+          top: 39%;
+        }
+      }
     }
 
     .icon:before {
       width: 16px;
       height: 16px;
       left: 0 !important;
-      margin-left: -10px !important;
+      margin-left: -11px !important;
       margin-right: 17px !important;
       opacity: .7;
-      position: absolute;
       top: 50%;
       transform: translateY(-50%) translateX(50%);
       left: 50%;
