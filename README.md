@@ -9,9 +9,9 @@ My simple Atom settings linked from `~/.atom`.
 Currently compatible with following packages.
 
 ````
-$ apm list --installed
-/Users/rolle/.atom/packages (12)
+/Users/rolle/.atom/packages (13)
 ├── cssfmt@1.4.0
+├── filesize@0.4.2
 ├── itg-flat-dark@0.2.0
 ├── itg-flat-flatland-Monokai@0.16.0
 ├── linter@1.11.3
