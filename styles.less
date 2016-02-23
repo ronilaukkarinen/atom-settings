@@ -8,13 +8,14 @@
  * http://www.lesscss.org
  */
 
+// Hide scrollbars
 atom-text-editor .vertical-scrollbar,
 atom-text-editor::shadow .vertical-scrollbar,
 atom-text-editor .horizontal-scrollbar,
 atom-text-editor::shadow .horizontal-scrollbar,
 atom-text-editor .scrollbar-corner,
 atom-text-editor::shadow .scrollbar-corner {
-  opacity: 1;
+  opacity: 0;
 }
 
 atom-text-editor::shadow atom-text-editor-minimap::shadow .minimap-scroll-indicator,
@@ -24,57 +25,20 @@ atom-text-editor-minimap::shadow .minimap-scroll-indicator {
   opacity: 0;
 }
 
+// Minimap tweaks
 atom-text-editor::shadow atom-text-editor-minimap,
 atom-text-editor atom-text-editor-minimap {
-  background: rgba(255, 255, 255, 0.02);
+  background: rgba(255, 255, 255, .02);
 }
 
 atom-text-editor {
+
+  // Font rendering
   * {
     text-rendering: geometricPrecision !important;
   }
-}
 
-atom-text-editor .gutter,
-atom-text-editor::shadow .gutter {
-  background: rgba(0, 0, 0, 0.009);
-  color: rgba(255, 255, 255, 0.5);
-}
-
-.tree-view {
-  font-size: 11px;
-
-  .icon {
-
-    &:before {
-      width: 16px;
-      height: 18px;
-      opacity: .7;
-      position: relative;
-      top: 5px;
-    }
-  }
-
-  .header:before {
-    font-size: 10px !important;
-    opacity: .6;
-    margin-right: 0px !important;
-  }
-}
-
-.tree-view-open-files {
-  overflow: hidden;
-
-  .close-open-file::before {
-    font-size: 9px;
-    margin-right: 4px;
-    position: relative;
-    transform: translateY(-5%);
-  }
-}
-
-/* more subtle invisibles */
-atom-text-editor {
+  // More subtle invisibles
   .invisible-character {
     color: #504949;
     opacity: 0.5;
@@ -85,115 +49,76 @@ atom-text-editor {
   }
 }
 
-atom-text-editor.is-focused .line-number.cursor-line-no-selection,
-atom-text-editor.is-focused .line.cursor-line {
-  background-color: rgba(53, 57, 60, 0);
+// Improve line number background to be less shiny
+atom-text-editor .gutter,
+atom-text-editor::shadow .gutter {
+  background: rgba(0, 0, 0, 0.009);
+  color: rgba(255, 255, 255, 0.5);
 }
 
-atom-text-editor.is-focused .selection .region {
-  background-color: RGBA(100, 110, 100, 0.6);
-  color: #fff !important;
-  text-shadow: none;
-}
+// Tree view tweaks
+.tree-view {
 
-atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > div > div.tree-view-open-files > ul > li > div {
-  display: none;
-}
+  .header:before {
+    margin-right: 0px !important;
+  }
 
-atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > div > div.tree-view-open-files {
-  max-height: 100% !important;
-  margin-bottom: 10px;
-  margin-top: 20px;
-
-  li {
-    padding-left: 0 !important;
+  .icon {
+    font-size: 11px;
+    
+    &:before {
+      font-size: 13px;
+      margin-left: 0;
+      margin-right: 5px;
+      opacity: .7;
+    }
   }
 }
 
-.tree-view-resizer {
-  ::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-.icon.name {
-  font-size: 11px;
-}
-
-.name.icon.icon-file-directory:before {
-  top: 1px;
-  left: 0;
-  font-size: 12px;
-}
-
-.name.icon.icon-repo:before {
-  font-size: 18px;
-  top: 3px;
-}
-
-.list-group .selected::before,
-.list-tree .selected::before {
-  display: none;
-}
-
-.tree-view-resizer .tree-view-scroller .tree-view {
-  .selected:before,
-  &.tree-view-open-files .selected:before,
-  .selected:before,
-  &.tree-view-open-files .selected:before {
-    display: none;
-  }
-}
-
-.list-tree.has-collapsable-children li.list-item {
-  margin-left: 0;
-}
-
-// Package specific styles for tree-view-open-files package
+// Tree view open files package tweaks
 .tree-view-open-files {
+  overflow: hidden;
+  max-height: 100% !important;
+  margin-bottom: 20px;
+  margin-top: 0;
+
+  .close-open-file::before {
+    font-size: 9px;
+    margin-right: 9px;
+  }
+
+  .list-tree.has-collapsable-children li.list-item {
+    margin-left: 0;
+  }
 
   li.expanded {
     padding-left: 0 !important;
   }
 
   .close-open-file {
-    margin-left: 0 !important;
+    margin-left: -15px;
+    margin-right: -6px;
   }
 
+  .icon {
+    font-size: 11px;
 
-    .icon {
-      position: relative;
-      height: 27px;
-      width: 27px;
-      margin-left: -4px;
-    }
-
-    .icon:before {
-      width: 16px;
-      height: 16px;
-      left: 0 !important;
-      margin-left: -4px !important;
-      margin-right: 10px !important;
+    &:before {
+      font-size: 13px;
+      margin-left: 0;
+      margin-right: 5px;
       opacity: .7;
-      top: 6px;
     }
-
-
-  .header:before {
-    font-size: 10px !important;
-    opacity: .6;
-    margin-right: 0px !important;
   }
 
   .list-group,
   .list-tree {
-
-    padding-left: 0 !important;
-    padding-right: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
 
     .list-item {
       margin: 0;
-      padding-left: 6px !important;
+      padding-left: 6px;
       padding-right: 0;
       width: 100%;
 
@@ -203,6 +128,11 @@ atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > 
       }
     }
   }
+}
+
+// Hide open files meaningless "Pane" folder
+atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > div > div.tree-view-open-files > ul > li > div {
+  display: none;
 }
 
 // Project Find Results
