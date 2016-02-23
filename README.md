@@ -10,8 +10,9 @@ Currently compatible with following packages.
 
 ````
 $ apm list --installed
-/Users/rolle/.atom/packages (15)
+/Users/rolle/.atom/packages (16)
 ├── beacon-ui@0.5.0
+├── block-cursor@0.13.1
 ├── cssfmt@1.4.0
 ├── file-icons@1.6.15
 ├── filesize@0.4.2
@@ -27,3 +28,23 @@ $ apm list --installed
 ├── tree-view-open-files@0.3.0
 └── wakatime@5.0.2
 ````
+
+### Block cursor settings
+
+````
+"block-cursor":
+  global:
+    blinkOn:
+      backgroundColor:
+        red: 0
+        green: 0
+        blue: 0
+        alpha: 0
+      borderColor:
+        red: 255
+        green: 255
+        blue: 255
+        alpha: 0.7
+      borderStyle: "i-beam"
+      borderWidth: 3
+```
