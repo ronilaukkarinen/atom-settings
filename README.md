@@ -10,8 +10,7 @@ Currently compatible with following packages.
 
 ````
 $ apm list --installed
-/Users/rolle/.atom/packages (16)
-├── beacon-ui@0.5.0
+/Users/rolle/.atom/packages (15)
 ├── block-cursor@0.13.1
 ├── cssfmt@1.4.0
 ├── file-icons@1.6.15
@@ -26,7 +25,7 @@ $ apm list --installed
 ├── recent-projects@0.9.5
 ├── set-syntax@0.3.0
 ├── tree-view-open-files@0.3.0
-└── wakatime@5.0.2
+└── wakatime@5.0.8
 ````
 
 ### Block cursor settings
