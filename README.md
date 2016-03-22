@@ -10,7 +10,7 @@ Currently compatible with following packages.
 
 ````
 $ apm list --installed
-/Users/rolle/.atom/packages (16)
+/Users/rolle/.atom/packages (17)
 ├── atom-beautify@0.28.26
 ├── block-cursor@0.13.1
 ├── cssfmt@1.4.0
@@ -18,13 +18,14 @@ $ apm list --installed
 ├── filesize@0.4.2
 ├── itg-flat-dark@0.2.0
 ├── itg-flat-flatland-Monokai@0.16.0
-├── linter@1.11.3
+├── linter@1.11.4
 ├── linter-scss-lint@2.5.1
-├── minimap@4.20.0
+├── minimap@4.21.0
 ├── open-recent@5.0.0
 ├── pigments@0.24.5
 ├── recent-projects@0.9.5
 ├── set-syntax@0.3.0
+├── slickedit-select@1.6.0
 ├── tree-view-open-files@0.3.0
 └── wakatime@5.0.8
 ````
