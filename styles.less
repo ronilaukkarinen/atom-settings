@@ -75,15 +75,26 @@ atom-text-editor::shadow .gutter {
   }
 }
 
-.tree-view-resizer .tree-view-scroller {
-  border-top: 1px solid rgba(255,255,255,.08);
-  padding-top: 5px;
+.tree-view-resizer {
+  display: block;
+  overflow: scroll;
+
+  .tree-view-scroller {
+    border-top: 1px solid rgba(255,255,255,.08);
+    padding-top: 5px;
+  }
 }
 
 // Tree view open files package tweaks
 .tree-view-open-files {
   overflow: auto;
-  flex: 0 0; // Fixes the low height
+  display: block;
+  flex: none;
+
+  li {
+    display: block;
+  }
+
   margin-bottom: 10px;
   margin-top: 0;
 
