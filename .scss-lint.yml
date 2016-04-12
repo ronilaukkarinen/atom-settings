@@ -143,7 +143,7 @@ linters:
     properties: {}
 
   PseudoElement:
-    enabled: true
+    enabled: false
 
   QualifyingElement:
     enabled: true
@@ -185,7 +185,7 @@ linters:
     enabled: true
 
   SpaceAroundOperator:
-    enabled: true
+    enabled: false
     style: one_space # or 'at_least_one_space', or 'no_space'
 
   SpaceBeforeBrace:
