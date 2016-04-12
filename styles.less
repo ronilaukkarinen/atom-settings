@@ -8,21 +8,69 @@
  * http://www.lesscss.org
  */
 
-// Hide scrollbars
+
+// Remove vertical scrollbar (best used with minimap package enabled)
 atom-text-editor .vertical-scrollbar,
 atom-text-editor::shadow .vertical-scrollbar,
-atom-text-editor .horizontal-scrollbar,
-atom-text-editor::shadow .horizontal-scrollbar,
 atom-text-editor .scrollbar-corner,
 atom-text-editor::shadow .scrollbar-corner {
-  opacity: 0;
+   opacity: 0;
+   width: 0 !important;
 }
 
-atom-text-editor::shadow atom-text-editor-minimap::shadow .minimap-scroll-indicator,
-atom-text-editor atom-text-editor-minimap::shadow .minimap-scroll-indicator,
-atom-text-editor-minimap::shadow .minimap-scroll-indicator {
-  height: 0;
-  opacity: 0;
+// Cool scrollbars
+body,
+html,
+.editor,
+.editor--private,
+.scroll-view,
+.vertical-scrollbar {
+  ::-webkit-scrollbar {
+    position: relative;
+    top: 6px;
+    float: right;
+    width: 3px;
+    border: 0;
+    border-radius: 3px;
+    background-color: transparent;
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    position: relative;
+    top: 3px;
+    float: right;
+    width: 3px;
+    border: 0;
+    border-radius: 3px;
+    background-color: rgb(120, 120, 120);
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(120, 120, 120, .2);
+  }
+
+  ::-webkit-scrollbar,
+  ::-webkit-scrollbar-track,
+  ::-webkit-scrollbar-thumb,
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: transparent;
+    transition: all 0.55s;
+  }
+
+  &:hover, &:focus, iframe:focus, frame:focus, iframe:hover, frame:focus, frameset:focus, frameset:hover {
+
+      ::-webkit-scrollbar-thumb {
+          background-color: rgb(120, 120, 120);
+          transition: all 0.55s;
+      }
+
+  }
 }
 
 // Minimap tweaks
