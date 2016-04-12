@@ -2,7 +2,7 @@
 
 My simple Atom settings linked from `~/.atom`.
 
-![Screenshot](https://dl.dropboxusercontent.com/u/18447700/Screenshot%202016-01-20%2009.48.34.png "Look how sexy I am.")
+![Screenshot](https://dl.dropboxusercontent.com/u/18447700/atom-settings-apr16.png "Look how sexy I am.")
 
 ### Packages
 
