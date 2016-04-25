@@ -20,7 +20,7 @@ Community Packages (18) /Users/rolle/.atom/packages
 ├── itg-flat-flatland-Monokai@0.16.0
 ├── linter@1.11.4
 ├── linter-php@1.2.0
-├── linter-stylelint@2.6.0
+├── linter-scss-lint@2.5.1
 ├── minimap@4.22.1
 ├── open-recent@5.0.0
 ├── pigments@0.26.0
