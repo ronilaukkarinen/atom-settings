@@ -10,19 +10,20 @@ Currently compatible with following packages.
 
 ````
 $ apm list --installed
-/Users/rolle/.atom/packages (17)
-├── atom-beautify@0.28.26
+Community Packages (18) /Users/rolle/.atom/packages
+├── atom-beautify@0.29.7
 ├── block-cursor@0.13.1
 ├── cssfmt@1.4.0
-├── file-icons@1.6.18
+├── file-icons@1.7.7
 ├── filesize@0.4.2
 ├── itg-flat-dark@0.2.0
 ├── itg-flat-flatland-Monokai@0.16.0
 ├── linter@1.11.4
-├── linter-scss-lint@2.5.1
-├── minimap@4.21.0
+├── linter-php@1.2.0
+├── linter-stylelint@2.6.0
+├── minimap@4.22.1
 ├── open-recent@5.0.0
-├── pigments@0.24.5
+├── pigments@0.26.0
 ├── recent-projects@0.9.5
 ├── set-syntax@0.3.0
 ├── slickedit-select@1.6.0
