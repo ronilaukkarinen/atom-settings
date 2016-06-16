@@ -19,6 +19,110 @@ atom-text-editor::shadow .horizontal-scrollbar {
    width: 0 !important;
 }
 
+// Hide horizontal scrollbar on modal box
+atom-panel.modal .select-list ol.list-group, atom-panel.modal.select-list ol.list-group {
+  overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      position: relative;
+      top: 6px;
+      float: right;
+      width: 3px;
+      height: 3px;
+      border: 0;
+      border-radius: 3px;
+      background-color: transparent;
+      background-clip: padding-box;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      position: relative;
+      top: 3px;
+      float: right;
+      width: 3px;
+      border: 0;
+      border-radius: 3px;
+      background-color: rgba(255, 255, 255, .05);
+      background-clip: padding-box;
+      border: 10px solid rgba(255, 255, 255, .2);
+    }
+
+    &::-webkit-scrollbar-thumb:window-inactive {
+      background: rgba(255, 255, 255, .05);
+    }
+
+    &::-webkit-scrollbar,
+    &::-webkit-scrollbar-track,
+    &::-webkit-scrollbar-thumb,
+    &::-webkit-scrollbar-thumb:window-inactive {
+      background-color: rgba(255, 255, 255, 0);
+      transition: all 0.55s;
+    }
+
+    &:hover, &:focus, iframe:focus, frame:focus, iframe:hover, frame:focus, frameset:focus, frameset:hover {
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, .2);
+            border: 10px solid rgba(255, 255, 255, .8);
+            transition: all 0.55s;
+        }
+    }
+  }
+
+  // Cool panel-left scrollbars (only on hover)
+  .panel-left {
+    ::-webkit-scrollbar {
+      position: relative;
+      top: 6px;
+      float: right;
+      width: 3px;
+      height: 3px;
+      border: 0;
+      border-radius: 3px;
+      background-color: transparent;
+      background-clip: padding-box;
+    }
+
+    ::-webkit-scrollbar-track {
+      border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      position: relative;
+      top: 3px;
+      float: right;
+      width: 3px;
+      border: 0;
+      border-radius: 3px;
+      background-color: rgba(120, 120, 120, .05);
+      background-clip: padding-box;
+    }
+
+    ::-webkit-scrollbar-thumb:window-inactive {
+      background: rgba(120, 120, 120, .05);
+    }
+
+    ::-webkit-scrollbar,
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-thumb,
+    ::-webkit-scrollbar-thumb:window-inactive {
+      background-color: rgba(255, 255, 255, 0);
+      transition: all 0.55s;
+    }
+
+    &:hover, &:focus, iframe:focus, frame:focus, iframe:hover, frame:focus, frameset:focus, frameset:hover {
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, .2);
+            transition: all 0.55s;
+        }
+    }
+}
+
 linter-panel {
   overflow-x: hidden;
 
