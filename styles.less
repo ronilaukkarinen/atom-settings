@@ -19,6 +19,37 @@ atom-text-editor::shadow .horizontal-scrollbar {
    width: 0 !important;
 }
 
+// Better top pane (quick search)
+atom-panel.modal atom-text-editor[mini], .overlay atom-text-editor[mini] {
+  margin-bottom: 0;
+}
+
+atom-panel.modal.overlay.from-top {
+  background: #27292b;
+  padding: 0;
+
+  .loading {
+    padding: 10px;
+
+    .loading-message,
+    .badge {
+      margin-top: 5px;
+      margin-bottom: 5px;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+
+  .error-message {
+    padding: 10px;
+  }
+
+  .list-group {
+    padding: 0;
+    margin: 0;
+  }
+}
+
 // Hide horizontal scrollbar on modal box
 atom-panel.modal .select-list ol.list-group, atom-panel.modal.select-list ol.list-group {
   overflow-x: hidden;
