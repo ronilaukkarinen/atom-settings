@@ -22,6 +22,14 @@ atom-text-editor::shadow .horizontal-scrollbar {
 // Better top pane (quick search)
 atom-panel.modal atom-text-editor[mini], .overlay atom-text-editor[mini] {
   margin-bottom: 0;
+  height: 35px;
+  max-height: 35px;
+}
+
+// Quick search background color
+atom-text-editor[mini],
+atom-text-editor[mini]::shadow {
+  background: #222;
 }
 
 atom-panel.modal.overlay.from-top {
@@ -45,6 +53,7 @@ atom-panel.modal.overlay.from-top {
   }
 
   .list-group {
+    background: #191919;
     padding: 0;
     margin: 0;
   }
