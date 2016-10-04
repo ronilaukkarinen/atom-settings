@@ -24,6 +24,7 @@ atom-panel.modal atom-text-editor[mini], .overlay atom-text-editor[mini] {
   margin-bottom: 0;
   height: 35px;
   max-height: 35px;
+  line-height: 35px;
 }
 
 // Quick search background color
@@ -406,13 +407,6 @@ atom-text-editor::shadow .gutter {
 // Hide open files meaningless "Pane" folder
 atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > div > div.tree-view-open-files > ul > li > div {
   display: none;
-}
-
-// Project Find Results
-body > atom-workspace > atom-workspace-axis > atom-workspace-axis > atom-pane-container > atom-pane > div > div.preview-pane.pane-item {
-  .matches.list-tree {
-    opacity: .5;
-  }
 }
 
 // Recent projects
