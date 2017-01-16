@@ -2,6 +2,9 @@
 
 My simple Atom settings linked from `~/.atom`.
 
+![Screenshot](http://i.imgur.com/vZ5zqm5.png "With Spacegray Dark UI")
+With Spacegray Dark UI.
+
 ![Screenshot](https://dl.dropboxusercontent.com/u/18447700/atom-settings-apr16.png "With Itg Flat Dark UI.")
 With Itg Flat Dark UI.
 
