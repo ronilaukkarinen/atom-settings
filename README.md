@@ -14,33 +14,29 @@ Currently compatible with following packages.
 
 ````
 $ apm list --installed
-Community Packages (27) /Users/rolle/.atom/packages
-├── base16-ocean-dark-spacegray@0.12.0
+Community Packages (23) /Users/rolle/.atom/packages
 ├── block-cursor@0.13.1
 ├── code-stats-atom@2.0.0
 ├── cssfmt@1.4.0
-├── file-icons@1.7.19
-├── filesize@0.4.2
-├── genesis-syntax@1.0.7
-├── genesis-ui@0.5.0
-├── itg-flat-dark@0.2.0
-├── itg-flat-flatland-Monokai@1.0.0
-├── linter@1.11.16
-├── linter-phpcs@1.4.1
+├── filesize@2.0.3
+├── git-log@0.4.1
+├── git-plus@7.1.0
+├── git-time-machine@1.5.4
+├── itg-flat-flatland-Monokai@1.5.0
+├── linter@1.11.21
+├── linter-phpcs@1.5.6
 ├── linter-scss-lint@3.0.4
-├── minimap@4.25.0
+├── minimap@4.26.6
+├── open-files@0.4.1
 ├── open-recent@5.0.0
 ├── php-fmt@0.1.2
-├── phpcbf@0.2.1
-├── pigments@0.36.0
-├── recent-projects@0.13.0
-├── set-syntax@0.3.0
+├── pigments@0.38.0
+├── recent-projects@0.13.1
+├── set-syntax@0.3.2
 ├── slickedit-select@1.6.1
-├── spacegray-atom-dark-syntax@1.2.0
-├── spacegray-dark-neue-syntax@1.3.0
 ├── spacegray-dark-ui@0.12.0
-├── tree-view-open-files@0.3.0
-├── wakatime@6.0.10
+├── spring-dark-syntax@0.0.4
+├── wakatime@6.0.12
 └── web-accessibility-checker@0.1.4
 ````
 

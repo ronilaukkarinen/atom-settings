@@ -8,13 +8,16 @@
  * http://www.lesscss.org
  */
 
+// Remove dragger background/border
+.tool-panel {
+  margin-right: -3px;
+  background: transparent;
+}
+
 // Remove vertical scrollbar (best used with minimap package enabled)
 atom-text-editor .vertical-scrollbar,
-atom-text-editor::shadow .vertical-scrollbar,
 atom-text-editor .scrollbar-corner,
-atom-text-editor::shadow .scrollbar-corner,
-atom-text-editor .horizontal-scrollbar,
-atom-text-editor::shadow .horizontal-scrollbar {
+atom-text-editor .horizontal-scrollbar {
    opacity: 0;
    width: 0 !important;
 }
@@ -28,8 +31,7 @@ atom-panel.modal atom-text-editor[mini], .overlay atom-text-editor[mini] {
 }
 
 // Quick search background color
-atom-text-editor[mini],
-atom-text-editor[mini]::shadow {
+atom-text-editor[mini] {
   background: #222;
 }
 
@@ -266,7 +268,6 @@ linter-panel {
 }
 
 // Minimap tweaks
-atom-text-editor::shadow atom-text-editor-minimap,
 atom-text-editor atom-text-editor-minimap {
   background: rgba(255, 255, 255, .02);
 }
@@ -290,8 +291,7 @@ atom-text-editor {
 }
 
 // Improve line number background to be less shiny
-atom-text-editor .gutter,
-atom-text-editor::shadow .gutter {
+atom-text-editor .gutter {
   background: rgba(0, 0, 0, 0.009);
   color: rgba(255, 255, 255, 0.5);
 }
@@ -326,8 +326,9 @@ atom-text-editor::shadow .gutter {
   }
 }
 
-// Tree view open files package tweaks
-.tree-view-open-files {
+// tree-view-open-files & open-files package tweaks
+.tree-view-open-files,
+.open-files {
   overflow: auto;
   display: block;
   flex: none;
@@ -396,9 +397,9 @@ atom-text-editor::shadow .gutter {
       padding-right: 0;
       width: 100%;
 
-      // Better flatland-styled hilight
-      &.selected {
-        background: #4284c7;
+      // Fix for selected item height
+      &::before {
+        height: 30px;
       }
     }
   }
