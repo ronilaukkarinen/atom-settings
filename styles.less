@@ -333,6 +333,14 @@ atom-text-editor .gutter {
   display: block;
   flex: none;
 
+  > .list-tree {
+    > .list-nested-item {
+      > .list-item {
+        line-height: 1.9em;
+      }
+    }
+  }
+
   li {
     display: block;
   }
@@ -356,6 +364,12 @@ atom-text-editor .gutter {
   .close-open-file {
     margin-left: -15px;
     margin-right: -6px;
+    border: 0 !important;
+
+    &:hover {
+      background: transparent !important;
+      color: #fff !important;
+    }
   }
 
   .modified .close-open-file::before {
@@ -369,9 +383,12 @@ atom-text-editor .gutter {
   }
 
   .modified .close-open-file {
+    border: 0;
+
     &:hover,
     &:focus {
       margin-right: 3px !important;
+      border: 0 !important;
     }
   }
 
@@ -396,6 +413,14 @@ atom-text-editor .gutter {
       padding-left: 6px;
       padding-right: 0;
       width: 100%;
+
+      &:hover {
+        border: 0;
+
+        * {
+          border: 0;
+        }
+      }
 
       // Fix for selected item height
       &::before {
@@ -425,5 +450,35 @@ atom-workspace > atom-workspace-axis > atom-panel-container.left > atom-panel > 
         }
       }
     }
+  }
+}
+
+// Linter
+linter-bottom-tab {
+  border: 0;
+}
+
+status-bar {
+  height: 26px;
+
+  .flexbox-repaint-hack {
+    padding: 0 10px 0 4px;
+  }
+
+  linter-bottom-container {
+    line-height: 20px;
+  }
+
+  linter-bottom-tab {
+    line-height: 26px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  svg {
+    width: 12px;
+    height: 12px;
+    top: 3px;
+    position: relative;
   }
 }
