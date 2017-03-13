@@ -276,7 +276,9 @@ atom-text-editor {
 
   // Font rendering
   * {
-    text-rendering: geometricPrecision !important;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-size-adjust: none;
+    -webkit-text-rendering: geometricPrecision;
   }
 
   // More subtle invisibles
@@ -297,7 +299,8 @@ atom-text-editor .gutter {
 }
 
 // Tree view tweaks
-.tree-view {
+.tree-view,
+.tree-view-extended {
 
   .header:before {
     margin-right: 0px !important;
@@ -327,8 +330,26 @@ atom-text-editor .gutter {
 }
 
 // tree-view-open-files & open-files package tweaks
+.tree-view-extended {
+  ol {
+    li {
+      .icon:before {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .list-tree.has-collapsable-children .list-nested-item > .list-item::before {
+    top: 1px;
+    width: 15px;
+    height: 10px;
+    left: 2px;
+  }
+}
+
 .tree-view-open-files,
-.open-files {
+.open-files,
+.tree-view-extended {
   margin-bottom: 0 !important;
   border-bottom: 0;
   max-height: 100% !important;
