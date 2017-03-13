@@ -330,20 +330,23 @@ atom-text-editor .gutter {
 }
 
 // tree-view-open-files & open-files package tweaks
-.tree-view-extended {
-  ol {
-    li {
-      .icon:before {
-        margin-right: 0 !important;
+.panel-left {
+  .tree-view-extended {
+    ol,
+    ul {
+      > li {
+        .icon:before {
+          margin-right: 0 !important;
+        }
       }
     }
-  }
 
-  .list-tree.has-collapsable-children .list-nested-item > .list-item::before {
-    top: 1px;
-    width: 15px;
-    height: 10px;
-    left: 2px;
+    .list-tree.has-collapsable-children .list-nested-item > .list-item::before {
+      top: 1px;
+      width: 15px;
+      height: 10px;
+      left: 2px;
+    }
   }
 }
 
@@ -393,23 +396,30 @@ atom-text-editor .gutter {
     }
   }
 
-  .modified .close-open-file::before {
-    width: 12px;
-    height: 12px;
-    margin-left: 0;
-    margin-right: 5px;
-    margin-right: 9px;
-    border-color: #77cec0;
-    top: 1px;
-  }
+  .modified {
+    .close-open-file::before {
+      width: 6px;
+      height: 6px;
+      margin-left: 0;
+      border: 4px solid #0098ff;
+      border-color: #0098ff;
+      position: relative;
+      top: 0;
+      left: 2px;
+    }
 
-  .modified .close-open-file {
-    border: 0;
+    span.name {
+      margin-left: 11px;
+    }
 
-    &:hover,
-    &:focus {
-      margin-right: 3px !important;
-      border: 0 !important;
+    .close-open-file {
+      border: 0;
+
+      &:hover,
+      &:focus {
+        margin-right: 3px !important;
+        border: 0 !important;
+      }
     }
   }
 
