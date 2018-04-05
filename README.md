@@ -5,10 +5,10 @@ My simple Atom settings linked from `~/.atom`.
 ![Screenshot](http://i.imgur.com/vZ5zqm5.png "With Spacegray Dark UI")
 With Spacegray Dark UI.
 
-![Screenshot](https://dl.dropboxusercontent.com/u/18447700/atom-settings-apr16.png "With Itg Flat Dark UI.")
+![Screenshot](https://rolle.design/atom-settings-apr16.png "With Itg Flat Dark UI.")
 With Itg Flat Dark UI.
 
-![Screenshot](https://dl.dropboxusercontent.com/u/18447700/atom-settings-oct-2016.png "With Genesis UI.")
+![Screenshot](https://rolle.design/atom-settings-oct-2016.png "With Genesis UI.")
 With Genesis UI.
 
 ### Packages
